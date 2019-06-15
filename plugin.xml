@@ -3,6 +3,10 @@
     xmlns="http://apache.org/cordova/ns/plugins/1.0" 
     xmlns:android="http://schemas.android.com/apk/res/android">
     <name>pb50</name>
+    <description>Print Plugin for PB50 FingerPrint Language</description>
+    <author>lizhengzhou</author>
+    <keywords>bluetooth,label printer,pb50,cordova</keywords>
+    <license>Apache-2.0</license>
     <js-module name="pb50" src="www/pb50.js">
         <clobbers target="cordova.plugins.pb50" />
     </js-module>

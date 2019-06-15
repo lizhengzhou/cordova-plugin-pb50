@@ -1,0 +1,22 @@
+{
+    "name": "cordova-plugin-pb50",
+    "version": "1.0.0",
+    "description": "Print Plugin for PB50 FingerPrint Language",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lizhengzhou/cordova-plugin-pb50.git"
+    },
+    "keywords": [
+        "bluetooth",
+        "label",
+        "printer",
+        "pb50",
+        "cordova"
+    ],
+    "author": "lizhengzhou",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/lizhengzhou/cordova-plugin-pb50/issues"
+    },
+    "homepage": "https://github.com/lizhengzhou/cordova-plugin-pb50#readme"
+}
