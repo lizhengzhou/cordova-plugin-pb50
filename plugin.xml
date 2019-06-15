@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova-plugin-pb50" version="1.0.2" 
     xmlns="http://apache.org/cordova/ns/plugins/1.0" 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android" 
     xmlns:tools="http://schemas.android.com/tools">
     <name>pb50</name>
     <description>Print Plugin for PB50 FingerPrint Language</description>
@@ -22,13 +22,16 @@
         <source-file src="src/android/DO_AndroidSDK_v2.4.9.aar" target-dir="libs" />
         <framework src="src/android/pb50.gradle" custom="true" type="gradleReference" />
 
-        <edit-config file="AndroidManifest.xml" target="/manifest" mode="merge">
-            <manifest xmlns:tools="http://schemas.android.com/tools" ></manifest>
+        <edit-config file="AndroidManifest.xml" target="/manifest/uses-sdk" mode="merge">
+            <uses-sdk android:minSdkVersion="16" android:maxSdkVersion="23" />
+        </edit-config>
+        <!-- <edit-config file="AndroidManifest.xml" target="/manifest" mode="merge">
+            <manifest xmlns:tools="http://schemas.android.com/tools"></manifest>
         </edit-config>
 
         <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
-            <application tools:replace="android:icon" ></application>
-        </edit-config>
+            <application tools:replace="android:icon"></application>
+        </edit-config> -->
 
     </platform>
 </plugin>
