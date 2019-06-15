@@ -23,11 +23,11 @@
         <framework src="src/android/pb50.gradle" custom="true" type="gradleReference" />
 
         <edit-config file="AndroidManifest.xml" target="/manifest" mode="merge">
-            <manifest xmlns:tools="http://schemas.android.com/tools" />
+            <manifest xmlns:tools="http://schemas.android.com/tools" ></manifest>
         </edit-config>
 
         <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
-            <application tools:replace="android:icon" />
+            <application tools:replace="android:icon" ></application>
         </edit-config>
 
     </platform>
