@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-pb50" version="1.0.0" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>pb50</name>
+    <js-module name="pb50" src="www/pb50.js">
+        <clobbers target="cordova.plugins.pb50" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="pb50">
+                <param name="android-package" value="cn.lizz.cordova.plugin.pb50" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/pb50.java" target-dir="src/cn/lizz/cordova/plugin" />
+        <source-file src="src/android/DO_AndroidSDK_v2.4.9.aar" target-dir="libs" />
+        <framework src="src/android/pb50.gradle" custom="true" type="gradleReference" />
+    </platform>
+</plugin>
